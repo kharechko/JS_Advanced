@@ -30,7 +30,7 @@ search.addEventListener('click', function() {
 
 function showMore(id) {
  let detail = new XMLHttpRequest();
-  detail.open('GET',` http://www.omdbapi.com/?i=${id}&apikey=13bbebf7`, false);
+  detail.open('GET',` http://www.omdbapi.com/?plot=full&i=${id}&apikey=13bbebf7`, false);
   detail.send();
   let res = detail.responseText;
   res = JSON.parse(res);
