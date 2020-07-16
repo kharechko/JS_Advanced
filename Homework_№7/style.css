@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: white;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.modal-lg {
+  max-width: 85%;
+}
+
+.modal-dialog {
+   height: 90%; 
+}
+.modal-content {
+   height: 90%; 
+  }
+li {
+  border: none;
+  outline: none;
+ }
+
+li.borderless {
+  border: none;
+}
+.container {
+    padding-left: 150px;
+ }
+
+.movie-card {
+    width: 250px;
+    height: 500px; 
+    text-align: center; 
+    margin-top: 100px;
+    margin-right: 50px;
+    border-radius: 5px; 
+    
+  }
+
+.show-btn {
+    height: 50px;
+    width: 250px;
+    background-color: rgb(241, 139, 55);
+ }
+
+.movie-sml-img {
+    width: 250px;
+    height: 350px;
+    border-radius: 5px  5px 0 0;
+  }
+
+  .search {
+    background-color: rgb(241, 139, 55);
+  }
