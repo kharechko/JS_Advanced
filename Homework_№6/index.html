@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 6</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-100">
+ <div class="tab-content h-100" id="myTabContent">
+   <div class="h-100 signUp">
+     <div class="row h-100 justify-content-center align-items-center">
+      <div class="col-10 col-md-8 col-lg-6 d-flex  justify-content-center align-items-center flex-wrap">
+       <h1 class="font-weight-light col-12 text-center ml-5">
+               Please sign up
+      </h1>
+    <form name="signUpForm" class="pl-5 col-12 d-flex  flex-column justify-content-center align-items-center signUpForm" id="registerForm">
+       <input type="text" class="form-control col-9 mt-5 firstName inp" placeholder="First name" name="fname">
+        <div class="col-9 invalid-fname d-none invalid-feedback text-left">
+          <small>
+               Incorrect name! Please, provide a valid value
+          </small>
+        </div>
+
+       <input type="text" class="form-control  col-9  mt-5 inp" placeholder="Last name" name='lname'>
+        <div class="col-9 invalid-name d-none invalid-feedback">
+          <small>
+            Incorrect name! Please, provide a valid value
+         </small>
+       </div>
+       <input type="email" class="form-control col-9  mt-5 email"   placeholder="Email address" name="email">
+       <div class="invalid-email d-none invalid-feedback col-9">
+          <small>
+              Incorrect email!
+         </small>
+      </div>
+      <div class="wrong-email  d-none invalid-feedback col-9" >
+         <small>
+             This email already exists
+         </small>
+        </div>
+       <input type="text" class="form-control  col-9 mt-5 inp" placeholder="Password" name="pass">
+       <div class="col-9 invalid-pass d-none invalid-feedback">
+         <small>
+               Incorrect password! A password must contain at least 8 characters, number, an uppercase character and a lowercase character!!! 
+         </small>
+      </div>
+      <button type="button" class="btn col-9 mt-5 register-btn">Sign Up</button>
+       <br>
+       <a class="font-weight-lighter col-9 showSignIn" href="#">Sign In now</a>
+     </form>
+   </div>
+ </div>
+</div>
+
+<div class="h-100  signIn d-none">
+  <div class="row h-100 justify-content-center align-items-center">
+  <div class="col-10 col-md-8 col-lg-6 d-flex  justify-content-center align-items-center flex-wrap position-relative">
+   <h1 class="font-weight-light">
+        Please sign in
+   </h1>
+   <form name="signInForm" class="col-12 d-flex flex-column justify-content-center align-items-center">
+      <input type="email" class="form-control col-9 mb-4"  placeholder="Email address" name="email">
+      <input type="password" class="form-control  col-9 mb-4" placeholder="Password" name="password">
+      <div class="col-9 local-empty d-none text-left text-danger">
+        <small>
+            localstorage is empty
+        </small>
+      </div>
+      <button type="button" class="btn  mt-4 col-9 sign-in-btn">Sign In</button>
+         <br>
+      <a class="font-weight-lighter col-9 showSignUp" href="#">Sign Up now</a>
+     </form>
+   </div>
+  </div>
+ </div>
+</div> 
+
+
+<div class="container h-100 position-relative d-none user-card">
+  <div class="row h-100 d-flex justify-content-center  flex-row align-items-center flex-wrap">
+     <div class="col-10  h-75 col-md-8 col-lg-5 h-75 bg-white d-flex ml-3 justify-content-center align-items-center flex-wrap text-center">
+       <img src="https://tse3.mm.bing.net/th?id=OIP.3-rUE4SORzLoGxaLp7KvLAHaHa&pid=Api&P=0&w=300&h=300"  class="avatar">
+          <h2 class="col-12  user-name">Petro Petriv</h2>
+            <div class="col-12 text-muted text-monospace user-info">
+              <p class="user-email">irynakharechko1515@gmail.com</p>
+              <p class="user-work">Designer & WEb-Developing</p>
+              </div>
+           <hr class="col-2">
+       </div>
+       <button type="button" class="btn col-lg-5  position-absolute signOut">Sign Out</button>
+      </div>
+  </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
